@@ -2,9 +2,10 @@ import React from 'react';
 import { AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai';
 
 const Footer = () => {
+  const copyrightSign = '\u00A9';
   return (
     <div className="footer-container">
-      <p>2022 JSM Headphones All rights reserverd</p>
+      <p>{`${copyrightSign} 2020-${new Date().getFullYear()} CrystalSolutions, Inc. All rights reserved`}</p>
       <p className="icons">
         <AiFillInstagram />
         <AiOutlineTwitter />
@@ -13,4 +14,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
